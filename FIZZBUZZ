@@ -1,0 +1,27 @@
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+  unsigned int Var = 1;
+  unsigned int Pick;
+
+  cout << "\nPlease pick a number for Fizzbuzz\n";
+  cin >> Pick;                        //User picks number
+   while(Var >= 1 and Var <= Pick)    //Holds while 0 to N
+    {
+      if(Var%3 == 0 and Var%5 == 0)   //3 and 5 condition
+        cout << "FIZZBUZZ\n";
+      else if(Var%5 == 0)             //5 condition
+        cout << "BUZZ\n";            
+      else if(Var%3 == 0)             //3 condition
+         cout << "FIZZ\n";
+      else                            //anything else
+        cout << Var << endl;
+      Var++;                          //counter
+   }         
+  cout << endl;
+return 0;
+}                                     //end program
