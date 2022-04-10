@@ -20,8 +20,8 @@ int main()
          cout << "FIZZ\n";
       else                            //anything else
         cout << Var << endl;
-      Var++;                          //counter
+      Var++;                          //counter of Var to Pick
    }         
-  cout << endl;
+  cout << endl;                       //end upon satisfying while
 return 0;
 }                                     //end program
