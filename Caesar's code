@@ -1,0 +1,26 @@
+\\ not completely finished; the base idea works but still some safeproofing required, will be adjusting for all safeproofs and creating the shift as a char function
+#include <iostream>
+using namespace std;
+
+int main()  {
+  
+  char inputchar = 'A';
+  int input = inputchar;
+  int shift = 3;
+  
+  while(inputchar !=0)  {
+    cout<< "Please enter an uppercase letter\n";
+    cin >> inputchar;
+    cout<< "Please enter the shift requested\n";
+    cin >> shift;
+    input = inputchar;
+    
+    if( inputchar < 65 || inputchar > 90) cout<< "Dont be a dingus\n";
+      if(input+shift>90) 
+         input -=26;
+     input +=shift; inputchar = input;
+     cout<<"The coded letter is "<<inputchar<<endl;
+          
+    }
+  }
+ 
